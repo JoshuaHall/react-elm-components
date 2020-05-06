@@ -1,3 +1,8 @@
 declare module "react-elm-components" {
-    export = function (node: HTMLElement): React.ClassicComponentClass<any> { }
+    interface ElmProps {
+        src: any;
+        ports: any;
+    }
+
+    export = function (props: ElmProps): React.ReactElement<any> { }
 }
